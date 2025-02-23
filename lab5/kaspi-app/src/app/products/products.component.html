@@ -1,0 +1,22 @@
+<div class="products-container">
+  <div class="product" *ngFor="let product of products">
+    <img [src]="product.image" [alt]="product.name" />
+    <p class="product-name">{{ product.name }}</p>
+    <p class="product-desc">{{ product.description }}</p>
+    <p>⭐ {{ product.rating }}</p>
+
+    <!-- Блок с кнопками -->
+    <div class="buttons-container">
+      <!-- Кнопка "Поделиться" -->
+      <button class="share-btn" (click)="share(product.link)">Поделиться</button>
+
+      <!-- Кнопка "Лайк" -->
+      <button class="icon-btn like-btn" (click)="toggleLike(product)">
+        <span>{{ isLiked(product) ? '❤️' : '🤍' }}</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Лайк-каунтер -->
+<p class="like-counter">❤️ Всего лайков: {{ likeCount }}</p>

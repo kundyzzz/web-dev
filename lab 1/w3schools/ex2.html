@@ -1,0 +1,64 @@
+<!--HTML CSS-->
+    <!--Inline CSS-->
+    <h1 style="color:blue;">A Blue Heading</h1>
+    <p style="color:red;">A red paragraph.</p>
+    <!--Internal CSS
+        An internal CSS is defined in the <head> section of an HTML page, within a <style> element.-->
+        <head>
+        <style>
+            body {background-color: powderblue;}
+            h1   {color: blue;}
+            p    {color: red;}
+        </style>
+        </head>    
+    <!--External CSS
+        An internal CSS is defined in the <head> section of an HTML page, within a <style> element.-->
+        <head>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+            
+        <!--"styles.css":
+            body {background-color: powderblue;}
+            h1 {color: blue;}
+            p {color: red;}-->
+
+    <!--CSS Colors, Fonts, Sizes, Borders, Paddings-->
+        <head>
+            <style>
+                h1 {
+                    color: blue;
+                    font-family: verdana;
+                    font-size: 300%;
+                }
+                p  {
+                    color: red;
+                    font-family: courier;
+                    font-size: 160%;
+                    border: 2px solid powderblue;
+                    padding: 30px;
+                    margin: 50px;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph.</p>
+            <p>This is a paragraph.</p>
+            <p>This is a paragraph.</p>
+        </body>
+        <!--The CSS color property defines the text color to be used.
+            The CSS font-family property defines the font to be used.
+            The CSS font-size property defines the text size to be used.-->
+<!--HTML Links-->
+    <body>
+        <a href="https://www.w3schools.com/">Visit W3Schools.com!</a><br>
+        <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a><br>
+        <a href="https://ru.wikipedia.org/wiki/%D0%94%D0%B6%D0%BE%D0%BB%D0%B8,_%D0%90%D0%BD%D0%B4%D0%B6%D0%B5%D0%BB%D0%B8%D0%BD%D0%B0">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Angelina_Jolie-643531_%28cropped%29.jpg/338px-Angelina_Jolie-643531_%28cropped%29.jpg" 
+            alt="HTML tutorial" style="width:150px">
+        </a><br>
+        <a href="mailto:someone@example.com">Send email</a><br>
+        <button onclick="document.location='default.asp'">HTML Tutorial</button><br>
+        <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a><br>
+    </body>
+

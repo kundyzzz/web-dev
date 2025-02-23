@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Style an Image Quiz</title>
+    <style>
+    	.kitten-image {
+          	margin-right: 20px;
+            border: 5px dashed salmon;
+          	border-radius: 10px;
+            cursor: pointer;
+          	box-shadow: 5px 5px 15px rgba(0, 0, 0, 30%);
+    	}
+
+
+        .udacity-text {
+            font-family: Helvetica, Arial, sans-serif;
+          	font-size: 50px;
+    		text-transform: uppercase;
+    		text-decoration: underline;
+    		color :  #8001ff;
+    	}
+
+
+        #menu {
+            text-align: center;
+        }
+
+        .item {
+            color: red;
+        }
+
+        .picture {
+            border-radius: 5px;
+        }
+
+        .description {
+            font-style: italic;
+        }
+
+        #to-do-list {
+            width: 400px;
+            background: #2e3d49;
+            padding: 10px 20px;
+        }
+        .title {
+            color: #fff;
+        }
+        .underline {
+            text-decoration: underline;
+        } 
+        .list {
+            list-style-type: circle;
+            text-align: left;
+            font-size: 16px;
+            color: #1fba58;
+            line-height: 24px;
+        }
+        .finished {
+            color: #f4442f;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+        <!-- ex1 -->
+        <img src="http://udacity.github.io/fend/lessons/L3/problem-set/02-style-an-image/kitten.jpg" alt="kitten" class="kitten-image">
+        
+        <!-- ex2 -->
+        <h1 class="udacity-text">udacity</h1>
+
+        <!-- ex3 -->
+        <div id="menu">
+            <h1 class="item">Chicken Clay Pot</h1>
+            <img src="img/clay-pot.jpg" alt="clay pot" class="picture">
+            <p class="description">Crispy rice baked in clay pot topped with chicken and vegetables</p>
+        </div>
+        
+        <!-- ex4 -->
+        <div>
+            <h1>My To-Do List</h1>
+            <h2>Chores</h2>
+            <ul class="list">
+                <li>load the diswasher</li>
+                <li>vacuum living room</li>
+                <li>take out garbage</li>
+                <li class="finished">sweep the garage</li>
+            </ul>
+
+            <h2>Homework</h2>
+            <ul class="list">
+                <li>brainstorm ideas for Science project</li>
+                <li>finish Calculus 2 problems</li>
+                <li>study for Programming midterm :P</li>
+                <li>finish Project 0 on Udacity FEND</li>
+                <li class="finished">find sources for Biology research paper</li>
+                <li>read first two chapters of The Art of War</li>
+            </ul>
+            
+            <h2>Party</h2>
+            <ul class="list">
+                <li>send out invitations</li>
+                <li>reserve party room at restaurant</li>
+                <li>order the cake!</li>
+            </ul>
+        </div>
+</body>
+</html>

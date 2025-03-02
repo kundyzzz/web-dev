@@ -1,0 +1,8 @@
+<div class="product-list">
+  <app-product-item 
+    *ngFor="let product of filteredProducts"
+    [product]="product"
+    (like)="toggleLike(product)">
+  </app-product-item>
+</div>
+<p class="liked-products-count">❤️: {{ likedProductsCount }}</p>

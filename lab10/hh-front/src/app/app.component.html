@@ -1,0 +1,15 @@
+<div *ngIf="companies && companies.length">
+  <h2>Companies List</h2>
+  <div *ngFor="let company of companies">
+    <p (click)="onSelectCompany(company)">{{ company.name }}</p>
+  </div>
+
+  <div *ngIf="selectedCompany">
+    <h3>Selected Company</h3>
+    <p>{{ selectedCompany.name }}</p>
+  </div>
+</div>
+
+<div *ngIf="!companies || companies.length === 0">
+  <p>No companies available.</p>
+</div>
